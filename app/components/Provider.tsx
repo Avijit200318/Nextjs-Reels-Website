@@ -3,7 +3,7 @@ import { SessionProvider } from "next-auth/react";
 // using this we can call session inside any frontend components.
 import { ImageKitProvider } from "@imagekit/next";
 
-const urlEndPoint = process.env.NEXT_PUBLIC_URL_ENDPOINT!;
+const urlEndPoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 
 export default function Providers({ children }: { children: React.ReactNode }) {
     return (
