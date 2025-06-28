@@ -18,7 +18,7 @@ if(!cached){
 
 export const connectToDb = async () => {
     // if we have the chacked, then we also have the connection
-    if(cached.connection){
+    if(cached && cached.connection){
         return cached.connection;
     }
 
